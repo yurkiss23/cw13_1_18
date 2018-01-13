@@ -1,11 +1,11 @@
 #include<iostream>
-#include<ctime>
+//#include<ctime>
 using namespace std;
 
 int main()
 {
-	srand(unsigned(time(0)));
-	/*int cube, step;
+	/*srand(unsigned(time(0)));
+	int cube, step;
 	do {
 		cube = 1 + rand() % 6;
 		cout << ++step <<", "<< cube << endl;
@@ -18,7 +18,7 @@ int main()
 		cout << ++step << ", " << cube1 << ", " << cube2 << endl;
 	} while (cube1 != 6 || cube2 != 6);*/
 
-	int T;
+	/*int T;
 	double total, sum = 0;
 	int step = 0, i;
 	int neg = 0, pos = 0, null = 0;
@@ -38,5 +38,38 @@ int main()
 	}
 	total = sum / i;
 	cout << "negative= " << neg << ", positive= " << pos << ", 0= " << null << ", total= " << total << endl;
+
+	for (int i = 9; i >= 0; i--) {
+		for (int j = 9; j >= 0; j--) {
+			cout << i ;
+		}
+		cout << "\n";
+	}
+
+	for (int i = 9; i > 0; i--) {
+		for (int j = i; j > i; j++) {
+			cout << j;
+		}
+		cout << "\n";
+	}
+
+	for (int i = 9; i >= 10; i--) {
+		for (int j = 0; j < 10; j++) {
+			cout << i;
+		}
+			
+	}*/
+
+	int h, w;
+	//char symb = '*', space = '.';
+	cin >> h >> w;
+	for (int r = h; r > 0; r--) {
+		//cout << ".";
+		for (int c = 0; c < r; c++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	//cout << endl;
 	return 0;
 }
